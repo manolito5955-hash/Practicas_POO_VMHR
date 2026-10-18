@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.myvmhr.gastossemanales.PrimaryController">
+
+    <children>
+
+        <Label text="Gastos semanales" />
+
+        <Label text="Alimentación:" />
+        <TextField fx:id="txtAlimentacion"
+                   maxWidth="200" />
+
+        <Label text="Refrigerios:" />
+        <TextField fx:id="txtRefrigerios"
+                   maxWidth="200" />
+
+        <Label text="Transporte:" />
+        <TextField fx:id="txtTransporte"
+                   maxWidth="200" />
+
+        <Label text="Telefonía:" />
+        <TextField fx:id="txtTelefonia"
+                   maxWidth="200" />
+
+        <Label text="Otros:" />
+        <TextField fx:id="txtOtros"
+                   maxWidth="200" />
+
+        <Button text="Calcular"
+                onAction="#calcular" />
+
+        <Label text="Total de gastos:" />
+        <Label fx:id="lblTotal" text="0" />
+
+        <Label text="Gasto más alto:" />
+        <Label fx:id="lblMayor" text="" />
+
+    </children>
+</VBox>

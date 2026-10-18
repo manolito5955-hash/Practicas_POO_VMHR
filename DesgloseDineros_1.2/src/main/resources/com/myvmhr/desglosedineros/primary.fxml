@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.myvmhr.desglosedineros.PrimaryController">
+
+    <children>
+
+        <Label text="Desglose de dinero" />
+
+        <Label text="Cantidad de dinero:" />
+
+        <TextField fx:id="txtCantidad"
+                   promptText="Cantidad" />
+
+        <Button text="Calcular"
+                onAction="#calcular" />
+
+        <Label text="Billetes de $500:" />
+        <Label fx:id="lbl500" text="0" />
+
+        <Label text="Billetes de $200:" />
+        <Label fx:id="lbl200" text="0" />
+
+        <Label text="Billetes de $100:" />
+        <Label fx:id="lbl100" text="0" />
+
+        <Label text="Billetes de $50:" />
+        <Label fx:id="lbl50" text="0" />
+
+        <Label text="Billetes de $20:" />
+        <Label fx:id="lbl20" text="0" />
+
+        <Label text="Monedas de $10:" />
+        <Label fx:id="lbl10" text="0" />
+
+        <Label text="Monedas de $5:" />
+        <Label fx:id="lbl5" text="0" />
+
+        <Label text="Monedas de $2:" />
+        <Label fx:id="lbl2" text="0" />
+
+        <Label text="Monedas de $1:" />
+        <Label fx:id="lbl1" text="0" />
+
+    </children>
+</VBox>

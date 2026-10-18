@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.myvmhr.tablamultiplicar.PrimaryController">
+
+    <children>
+
+        <Label text="Tabla de multiplicar" />
+
+        <Label text="Escribe un número:" />
+
+        <TextField fx:id="txtNumero"
+                   maxWidth="150" />
+
+        <Button text="Calcular"
+                onAction="#calcular" />
+
+        <Label text="Resultado:" />
+
+        <Label fx:id="lblResultado"
+               text=""
+               alignment="CENTER" />
+
+    </children>
+</VBox>

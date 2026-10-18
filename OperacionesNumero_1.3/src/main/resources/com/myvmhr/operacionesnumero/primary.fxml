@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.myvmhr.operacionesnumero.PrimaryController">
+
+    <children>
+
+        <Label text="Operaciones con un entero" />
+
+        <Label text="Escribe un número:" />
+
+        <TextField fx:id="txtNumero"
+                   maxWidth="200" />
+
+        <Button text="Calcular"
+                onAction="#calcular" />
+
+        <Label text="Cantidad de cifras:" />
+        <Label fx:id="lblCifras" text="0" />
+
+        <Label text="Suma de cifras pares:" />
+        <Label fx:id="lblPares" text="0" />
+
+        <Label text="Suma de cifras impares:" />
+        <Label fx:id="lblImpares" text="0" />
+
+        <Label text="Cifra mayor:" />
+        <Label fx:id="lblMayor" text="0" />
+
+        <Label text="Cifra menor:" />
+        <Label fx:id="lblMenor" text="0" />
+
+        <Label text="Divisores:" />
+
+        <Label fx:id="lblDivisores"
+               text=""
+               wrapText="true"
+               maxWidth="350" />
+
+    </children>
+</VBox>

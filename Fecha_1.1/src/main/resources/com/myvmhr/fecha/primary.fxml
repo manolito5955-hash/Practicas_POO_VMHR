@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="250.0" prefWidth="400.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.myvmhr.fecha.PrimaryController">
+
+    <children>
+
+        <Label layoutX="30" layoutY="40"
+               text="Fecha de nacimiento:" />
+
+        <TextField fx:id="txtFecha"
+                   layoutX="190" layoutY="35"
+                   prefWidth="150"
+                   promptText="dd/mm/aaaa" />
+
+        <Button layoutX="55" layoutY="100"
+                text="Calcular"
+                onAction="#calcularEdad" />
+
+        <Button layoutX="150" layoutY="100"
+                text="Limpiar"
+                onAction="#limpiar" />
+
+        <Label fx:id="lblResultado"
+               layoutX="75" layoutY="170"
+               prefWidth="280"
+               alignment="CENTER"
+               text=""
+               style="-fx-font-style: italic;" />
+
+    </children>
+</AnchorPane>
